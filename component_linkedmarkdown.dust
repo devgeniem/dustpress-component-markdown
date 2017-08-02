@@ -1,0 +1,16 @@
+{! 
+
+	# ACF FIELDS
+
+	m = markdown content
+	url = markdown source
+
+!}
+
+<p>Haettu osoitteesta <i><a href="{url}">{url}</a></i>.</p>
+
+<hr/>
+
+<div class="markdown">
+	{m|s}
+</div>
