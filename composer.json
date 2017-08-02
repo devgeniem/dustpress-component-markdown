@@ -1,0 +1,27 @@
+{
+    "name": "devgeniem/dustpress-component-markdown",
+    "type": "wordpress-plugin",
+    "description": "Markdown component",
+    "authors": [
+        {
+            "name": "Miika Arponen",
+            "email": "miika.arponen@geniem.com",
+            "homepage": "http://geniem.com/",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "wordpress", "video", "markdown"
+    ],
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "ssh://git@github.com/devgeniem/dustpress-components.git"
+        }
+    ],
+    "require": {
+        "devgeniem/dustpress-components": "*"
+    }
+}
