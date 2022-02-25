@@ -84,7 +84,7 @@ require_once('dpc-linked-md.php');
 						'key' => 'dpc_markdown',
 						'label' => 'Markdown',
 						'name' => 'm',
-						'type' => 'markdown',
+						'type' => 'niche_markdown',
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
