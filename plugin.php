@@ -3,7 +3,7 @@
  * Plugin Name: DustPress Component: Markdown
  * Plugin URI: https://github.com/devgeniem/dustpress-components-markdown
  * Description: Markdown component for DustPress Components
- * Version: 0.0.2
+ * Version: 0.0.3
  * Author: Geniem Oy / Miika Arponen
  * Author URI: http://www.geniem.com
  */
