@@ -6,10 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## Released
+
 ## [0.0.3] - 2022-03-18
 - `hotfix-niche-markdown-html-entity`: Html entity fix on acf format value.
-
-## Released
 
 ## [0.0.1] - 2021-11-11
 - Init plugin.
