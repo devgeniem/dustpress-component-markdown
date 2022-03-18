@@ -3,7 +3,7 @@
  * Plugin Name: DustPress Component: Markdown
  * Plugin URI: https://github.com/devgeniem/dustpress-components-markdown
  * Description: Markdown component for DustPress Components
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author: Geniem Oy / Miika Arponen
  * Author URI: http://www.geniem.com
  */
@@ -30,6 +30,7 @@ require_once('dpc-linked-md.php');
 		var $key 	= 'dpc_markdown';
 
 		public function init() {
+
 			require_once('parsedown.php');
 
 			if ( ! isset( self::$parsedown ) ) {
@@ -38,6 +39,14 @@ require_once('dpc-linked-md.php');
 
 			wp_enqueue_script( 'highlight.js', $this->url . 'dist/highlight.pack.js', null, false, false );
 			wp_enqueue_style( 'highlight.js', $this->url . 'dist/github.css' );
+
+			// Fixes html entity with ACF fields type of 'niche_markdown'.
+			\add_filter('acf/format_value/type=niche_markdown', function( $value, $post_id, $field ) {
+
+				$value = html_entity_decode( $value );
+
+				return $value;
+			}, 999, 3);
 		}
 
 		/**
